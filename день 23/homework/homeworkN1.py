@@ -1,230 +1,113 @@
-
-
-#task 1
-def number(num1,num2):
-    number = num1 + num2
-    number2 = num1 - num2
-    number3 = num1 * num2
-    return number,number2,number3
-       
-num1 = 5
-num2 = 7
-print(number(num1,num2))
-
-
-
-
-
-#task 2
-def number(num):
-    return sum(num)
-print(number([2,3,4,5,6,1]))
-
-
-
-
-#task 3
-def check(number):
-     if number % 2 == 0:
-          return True
-     elif number % 2 != 0:
-          return False
-
-print(check(22))
-
-
-#task 4
-def  manual_integer(int1):
-    return  max(int1)
-
-print(manual_integer([12, 45, 89, 100]))
-
-#task 5
-def list_sum(int35):
-    return sum(int35)
-
-print(list_sum([100, 67 ,200]))
-
-
-#task 6
-def stringss_reverce(string):
-    return string[::-1]
-
-print(stringss_reverce("boys"))
-
-
-
-
-##task 7
-def guess(word):
-    max_word = ""
-    for i in word:
-        if len(i) > len(max_word):
-            max_word += i
-    return max_word
-
-print(guess(["car", "money", "eujfuwes"]))
-
-
-#task 8
-def check(string):
-    word = ""
-    for i in string:
-        if i.islower():
-            word += i.upper()
-        elif i.isupper():
-            word += i.lower()
-    return word
-
-print(check("AnIMals"))
-
-
-#task 9
-def vowel_count(word):
-    vowel = "aioeuAIOEU"
-    count = 0
-    for i in word:
-        if i in vowel:
-            count += 1
-    return count
-
-print(vowel_count("mOnEy"))
-
-
-
-
-#task 10
-def even_kent(count):
-    if count % 2 == 0:
-        return True
-    else:
-        return False
-
-#task 11
-def sum_even_index(nums):
-    sum_even = 0
-    for i in range(0, len(nums), 2): 
-        sum_even += nums[i]
-    return sum_even
-
-nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-result = sum_even_index(nums)
-print(result)  
-
-
-
-#task 12
-def even_or_kent(numbers):
-    for i in numbers:
-        if i % 2 == 0:
-            print("even")
-        else:
-            print("kent")
-    return numbers
-
-print(even_or_kent([12, 78]))
-        
-
-#task 13
-def num(numbers1):
-    if numbers1 % 1 == 0 and numbers1 % numbers1  == 0:
-        return "simple"
-    else:
-        return "dificult"
-
-
-print(num(2))
-
-
-
-
-
-#task 14
-word = "erekle"
-print(word.capitalize())
-
-
-
-
-
-#task 15
-def num1(numbers10):
-    lists = []
-    for i in numbers10:
-        if i % 2 == 0:
-            lists.append(i / 2)
-        elif i % 2 != 0:
-            lists.append(i * 2)
-    return lists
-
-print(num1([2,3,5,6,7]))
-
-
-
-
-
-
-#task 16
-def string(word):
-    word = word.upper()
-    word = word [::-1]
-    return word
-print(string("money"))
-
-
-
-
-#task 17 
-def string1(word1):
-    odd = []
-    even = []
-    for i in word1:
-        if len(i) % 2 == 0:
-            even.append(i.upper())
-        elif len(i) % 2 != 0:
-            odd.append(i.upper())
-    return odd,even
-
-print(string1(["erekle", "leila", "gio"]))
-
-
-
-
-
-
-
-#task 18
-def stringss(string, char):
-    index = string.find(char)
-
-    if index % 2 == 0:
-        return string.upper()
-    else:
-        return string.capitalize()
-    
-print(stringss("Hello world", "w"))
-
-
-
-
-
-
-
-
-#task 19
-
-
-
-
-
-
-
-
-
-
-
-
-#task 20
-
-
-
+# 1. Print numbers from 1 to 5 using a for loop.
+# for i in range(1,5+1):
+#     print(i)
+# 2. Print numbers from 1 to 5 using a while loop.
+# i = 0
+# while i <= 5 :
+#     print (i)
+#     i += 1 
+# 3. Print each character in the string "hello" using a for loop.
+# word = "Igor"
+# for char in word:
+#     print (char)
+# 4. Print each character in the string "hello" using a while loop.
+# word = "Andria"
+# index = 0
+# while index < len(word):
+#     print(word[index])
+#     index += 1
+# 5. Print the numbers 1, 2, 3 using a for loop
+# for i in range(1,3+1):
+#     print (i)
+# 6. Print the numbers 1, 2, 3 using a while loop.
+# i = 1
+# while i <= 3:
+#     print (i)
+#     i += 1
+# 7. Print "Python is fun" 3 times using a for loop.
+# for i in range(3):
+#     print("Python is fun")
+# 8. Print "Python is fun" 3 times using a while loop.
+# i = 0
+# while i < 3:
+#     print("Python is fun")
+#     i += 1 
+# 9. Print the elements of a list [1, 2, 3] using a for loop.
+# lists = [1,2,3]
+# for lists in lists:
+#     print (lists)
+# 10. Print the elements of a list [1, 2, 3] using a while loop.
+# lists = [1,2,3]
+# index = 0
+# while index < len(lists):
+#     print(lists[index])
+#     index += 1
+# 11. Print "hi" for each element in a list [1, 2, 3] using a for loop.
+# word = "Hi"
+# lst = [1,2,3]
+# for element in lst:
+#     print("hi")
+# 12. Print "hi" for each element in a list [1, 2, 3] using a while loop.
+# lst = [1, 2, 3]
+# index = 0
+# while index < len(lst):
+#     print("Hi")
+#     index += 1
+# 13. Print the first 3 positive integers using a for loop.
+# for i in range(1, 4):
+#     print(i)
+# 14. Print the first 3 positive integers using a while loop.
+# i = 1
+# while i <= 3:
+#     print(i)
+#     i += 1
+# 15. Print the numbers from 1 to 3 in reverse using a for loop.
+# for i in range(3, 0, -1):
+#     print(i)
+# 16. Print the numbers from 1 to 3 in reverse using a while loop.
+# i = 3
+# while i >= 1:
+#     print(i)
+#     i -= 1
+# 17. Print the first 4 letters of the alphabet using a for loop.
+# letters = ['a', 'b', 'c', 'd']
+# for letter in letters:
+#     print(letter)
+# 18. Print the first 4 letters of the alphabet using a while loop.
+# letters = ['a', 'b', 'c', 'd']
+# index = 0
+# while index < len(letters):
+#     print(letters[index])
+#     index += 1
+# 19. Print the message "looping" 4 times using a for loop.
+# for i in range(4):
+#     print("Looping")
+# 20. Print the message "looping" 4 times using a while loop.
+# index = 0
+# while index < 4:
+#     print("Looping")
+#     index += 1
+# 21. Print the elements of a tuple (1, 2, 3) using a for loop.
+# tuple_elements = (1,2,3)
+# for elements in tuple_elements:
+#     print(elements)
+# 22. Print the elements of a tuple (1, 2, 3) using a while loop.
+# tuple_elements = (1, 2, 3)
+# index = 0
+# while index < len(tuple_elements):
+#     print(tuple_elements[index])
+#     index += 1
+# 23. Print the numbers 5, 4, 3, 2, 1 using a for loop.
+# for i in range(5, 0, -1):
+#     print(i)
+# 24. Print the numbers 5, 4, 3, 2, 1 using a while loop.
+# num = 5
+# while num >= 1:
+#     print(num)
+#     num -= 1
+# 25. Print the elements of the list ["apple", "banana", "cherry"] using a for loop.
+# fruits =["Apple", "Banana", "Cherry"]
+# for fruits in fruits:
+#     print(fruits)
+
+print
