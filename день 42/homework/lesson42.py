@@ -4,9 +4,8 @@
 
 #მაგალითი:
 
-
-words = (hi, Everyone)
-
+words = ['', 'Hello', '', 'world', '']
 result = ' '.join(words)
-
 print(result)
+
+

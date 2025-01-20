@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            background-color: transparent;
+            color: gray;
+            text-decoration: none;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .button::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            transition: width 0.3s ease;
+        }
+
+        .button:hover {
+            color:orangered;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Click Me</button>
+</body>
+</html>
