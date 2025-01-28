@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh;
+      margin: 0;
+      background-color: wheat;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 150px;
+      background-color:white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px black;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .absolute-element {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      padding: 5px 10px;
+      background-color:goldenrod;
+      color: white;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+    .content {
+      font-size: 20px;
+      color: gray;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="absolute-element">blub blub</div>
+    <div class="content">This is a card with flex</div>
+  </div>
+</body>
+</html>

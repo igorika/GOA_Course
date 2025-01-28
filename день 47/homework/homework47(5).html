@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+  .container {
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      gap: 20px; 
+      height: 100vh; 
+      border: 2px solid gainsboro;
+    }
+
+    .block {
+      flex: 1; 
+      padding: 25px;
+      background-color: white;
+      text-align: center;
+      border: 1px solid red;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="block">first one</div>
+    <div class="block">second one</div>
+  </div>
+</body>
+</html>
