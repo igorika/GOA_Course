@@ -1,1 +1,2 @@
-print(None)
+name='none'
+print(name)
