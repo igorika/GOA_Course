@@ -64,3 +64,6 @@ else:
     print("enter number from  1 to 7:")          
     
                
+
+
+               

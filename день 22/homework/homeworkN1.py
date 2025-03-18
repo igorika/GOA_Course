@@ -1,230 +1,175 @@
 
+# 1 შექმენით ფუნქცია, რომელიც იღებს რაიმე რიცხვს და აბრუნებს მასზე 5'ით მეტს
 
-#task 1
-def number(num1,num2):
-    number = num1 + num2
-    number2 = num1 - num2
-    number3 = num1 * num2
-    return number,number2,number3
-       
-num1 = 5
-num2 = 7
-print(number(num1,num2))
+# semoatanine = int(input("Enter Number: "))
 
+# def Number (semoatanine):
+#     return semoatanine + 5 
 
+# resoult = Number(semoatanine)
+# print(resoult)
 
 
 
-#task 2
-def number(num):
-    return sum(num)
-print(number([2,3,4,5,6,1]))
+# 2. შექმენით ფუნქცია, რომელიც იღებს ორ integer'ს და აბრუნებს მათ ნამრავლს
 
 
 
+# num1 = 105
+# num2 = 205
 
-#task 3
-def check(number):
-     if number % 2 == 0:
-          return True
-     elif number % 2 != 0:
-          return False
+# def integer(num1, num2):
+#     return num1 * num2
 
-print(check(22))
+# resoult = integer(num1, num2)
+# print(resoult)
 
 
-#task 4
-def  manual_integer(int1):
-    return  max(int1)
 
-print(manual_integer([12, 45, 89, 100]))
+# 3. შექმენით ფუნქცია, რომელიც იღებს string'ს ამ string'ის სიგრძეს (გამოიყენეთ ფუნქცია len())
 
-#task 5
-def list_sum(int35):
-    return sum(int35)
 
-print(list_sum([100, 67 ,200]))
 
+# word = "ROBOTIC"
 
-#task 6
-def stringss_reverce(string):
-    return string[::-1]
+# def string(word):
+#     return len(word)
 
-print(stringss_reverce("boys"))
+# resoult = string("ROBOTIC")
+# print(resoult)
 
 
 
+# 4. შექმენით ფუნქცია, რომელიც იღებს string'ების list'ს და აბრუნებს ამ string'ების სიგრძეების list'ს (გამოიყენეთ ფუნქცია len()).
 
-##task 7
-def guess(word):
-    max_word = ""
-    for i in word:
-        if len(i) > len(max_word):
-            max_word += i
-    return max_word
 
-print(guess(["car", "money", "eujfuwes"]))
+# listN1 = ["TRASH"]
 
+# stringN1 = ("COAL")
 
-#task 8
-def check(string):
-    word = ""
-    for i in string:
-        if i.islower():
-            word += i.upper()
-        elif i.isupper():
-            word += i.lower()
-    return word
+# def sigrze(listN1):
+#     return len(listN1)
 
-print(check("AnIMals"))
+# resoult = sigrze("TRASH")
+# print(resoult)
 
+# def sigrze(stringN1):
+#     return len(stringN1)
 
-#task 9
-def vowel_count(word):
-    vowel = "aioeuAIOEU"
-    count = 0
-    for i in word:
-        if i in vowel:
-            count += 1
-    return count
+# resoult = sigrze("COAL")
+# print(resoult)
 
-print(vowel_count("mOnEy"))
 
 
+# 5. შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს True-ს თუ ის არის Palindrome
+# (ანუ იგივენაირად იკითხება მარცნიდანაც და მარჯვნიდანაც მაგალითად: "wow") და სხვა შემთხვევაში False-ს.
 
 
-#task 10
-def even_kent(count):
-    if count % 2 == 0:
-        return True
-    else:
-        return False
+# def is_palindrome(s):
+#     s = s.lower()
+#     reversed_s = s[::-1]
+#     return s == reversed_s
 
-#task 11
-def sum_even_index(nums):
-    sum_even = 0
-    for i in range(0, len(nums), 2): 
-        sum_even += nums[i]
-    return sum_even
 
-nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-result = sum_even_index(nums)
-print(result)  
 
+# print(is_palindrome("WOW")) 
+# print(is_palindrome("CAR"))  
+# print(is_palindrome("SUPERMAN"))  
 
 
-#task 12
-def even_or_kent(numbers):
-    for i in numbers:
-        if i % 2 == 0:
-            print("even")
-        else:
-            print("kent")
-    return numbers
 
-print(even_or_kent([12, 78]))
-        
+# 6. შექმენით ფუნქცია, რომელიც პოულობს ყველაზე გრძელ string'ს string'ების სიაში.
 
-#task 13
-def num(numbers1):
-    if numbers1 % 1 == 0 and numbers1 % numbers1  == 0:
-        return "simple"
-    else:
-        return "dificult"
+# string1 = ["FLYING CAR"]
+# string2 = ["DISCORD"]
+# string3 = ["SPONGEBOB"]
 
 
-print(num(2))
+# def biggest_string(string1):
+#     return len(string1)
 
+# def biggest_string(string2):
+#     return len(string2)
 
+# def biggest_string(string3):
+#     return len(string3)
 
+# resoult = biggest_string("FLYING CAR")
+# print (resoult)
+# resoult = biggest_string("DISCORD")
+# print (resoult)
+# resoult = biggest_string("SPONGEBOB")
+# print (resoult)
 
 
-#task 14
-word = "erekle"
-print(word.capitalize())
 
+# 7. შექმენით ფუნქცია, რომელიც იღებს რიცხვს და აბრუნებს მის factorial'ს (რა არის ფაქტორიალი: https://en.wikipedia.org/wiki/Factorial).
 
 
 
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     result = 1
+#     for i in range(2, n + 1):
+#         result *= i
+#     return result
 
-#task 15
-def num1(numbers10):
-    lists = []
-    for i in numbers10:
-        if i % 2 == 0:
-            lists.append(i / 2)
-        elif i % 2 != 0:
-            lists.append(i * 2)
-    return lists
+# print(factorial(100))
 
-print(num1([2,3,5,6,7]))
 
 
+# 8. შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს ორივე list'იდან მაქსიმალური რიცხვების ჯამს.
 
 
 
+# def max_sums(list1, list2):
+#     max_sums_list = []
+#     for i in range(len(list1)):
+#         max_sums_list.append(max(list1[i], list2[i]))
+#     return max_sums_list
 
-#task 16
-def string(word):
-    word = word.upper()
-    word = word [::-1]
-    return word
-print(string("money"))
+# list1 = [1, 5, 3, 8]
+# list2 = [2, 4, 6, 7]
+# result = max_sums(list1, list2)
+# print(result)
 
 
 
+# 9. შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს ორივე list'იდან მინიმალური რიცხვების სხვაობას
 
-#task 17 
-def string1(word1):
-    odd = []
-    even = []
-    for i in word1:
-        if len(i) % 2 == 0:
-            even.append(i.upper())
-        elif len(i) % 2 != 0:
-            odd.append(i.upper())
-    return odd,even
 
-print(string1(["erekle", "leila", "gio"]))
+# def difference_min_lists(list1, list2):
+#     if not list1 or not list2:
+#         return None 
 
+#     min_list1 = min(list1)
+#     min_list2 = min(list2)
+#     difference = abs(min_list1 - min_list2)
+#     return difference
 
 
+# list1 = [5, 8, 2, 10]
+# list2 = [3, 7, 1, 9]
+# result = difference_min_lists(list1, list2)
+# print(f"Difference between min values of lists: {result}")
 
 
 
+# 10. შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ამ სიაში მაქსიმალური და მინიმალური რიცხვების სხვაობას. make this work 
 
-#task 18
-def stringss(string, char):
-    index = string.find(char)
 
-    if index % 2 == 0:
-        return string.upper()
-    else:
-        return string.capitalize()
+
+# def difference_max_min(numbers):
+#     if not numbers:
+#         return None 
     
-print(stringss("Hello world", "w"))
+#     max_num = max(numbers)
+#     min_num = min(numbers)
+#     difference = max_num - min_num
+#     return difference
 
 
-
-
-
-
-
-
-#task 19
-
-
-
-
-
-
-
-
-
-
-
-
-#task 20
-
-
-
+# numbers = [3, 9, 1, 7, 4, 2]
+# result = difference_max_min(numbers)
+# print(f"Difference between max and min: {result}") 

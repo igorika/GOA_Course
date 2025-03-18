@@ -65,3 +65,10 @@ mom_age_after_10_years=mom_age + 10
 mom_age=mom_age_after_10_years=mom_age / my_age_after_10_years
 
 print("In 10 years,your parent will be (2.036) times older than you.")
+
+
+
+
+
+
+
