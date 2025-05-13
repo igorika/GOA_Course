@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ქართული დროშა</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .flag {
+            width: 600px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border: 2px solid black;
+        }
+        
+        .big-horizontal,
+        .big-vertical {
+            position: absolute;
+            background-color: red;
+        }
+        .big-horizontal {
+            width: 100%;
+            height: 60px;
+            top: 50%;
+            transform: translateY(-60%);
+        }
+        .big-vertical {
+            width: 60px;
+            height: 100%;
+            left: 50%;
+            transform: translateX(-60%);
+        }
+        
+        .small-cross {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+        }
+        .small-cross::before,
+        .small-cross::after {
+            content: '';
+            position: absolute;
+            background-color: red;
+        }
+        .small-cross::before {
+            width: 42px;
+            height: 14px;
+            top: 28px;
+            left: 14px;
+        }
+        .small-cross::after {
+            width: 14px;
+            height: 42px;
+            top: 14px;
+            left: 28px;
+        }
+        
+        .small-cross.top-left {
+            top: 40px;
+            left: 40px;
+        }
+        .small-cross.top-right {
+            top: 40px;
+            right: 40px;
+        }
+        .small-cross.bottom-left {
+            bottom: 40px;
+            left: 40px;
+        }
+        .small-cross.bottom-right {
+            bottom: 40px;
+            right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="big-horizontal"></div>
+        <div class="big-vertical"></div>
+        <div class="small-cross top-left"></div>
+        <div class="small-cross top-right"></div>
+        <div class="small-cross bottom-left"></div>
+        <div class="small-cross bottom-right"></div>
+    </div>
+</body>
+</html>
+
